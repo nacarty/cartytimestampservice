@@ -1,0 +1,47 @@
+<head>
+    <style>
+        .heading{
+            font-size: 30px;
+            font-weight: 600;
+            color: blue;
+        }
+        .sub-heading{
+            font-size: 22px;
+            font-weight: 600;
+            color: blue;
+        }
+        .list-items{
+            
+            font-size: 18px;
+            font-weight: 600;
+            color: blue;
+        }
+        body{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <p class='heading'>
+        TIME-STAMP MICRO-SERVICE
+    </p>
+    <p> <span class ='sub-heading'>FUNCTIONALITY:</span>
+        <ol class='list-items'>
+            <li>You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+            <li>If it does, it returns both the Unix timestamp and the natural language form of that date. </li>
+            <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+        </ol>
+    </p>
+    <p><span class ='sub-heading'>EXAMPLE USAGE:</span>
+        
+        <ul class='list-items'>
+            <li>http://time-stamp-micro-service-nacarty.c9users.io/December 15, 2016</li>
+            <li>http://time-stamp-micro-service-nacarty.c9users.io/1450137600</li>
+        </ul>
+    <span class ='sub-heading'>EXAMPLE OUTPUT:</span>
+        <p class='list-items'>{ "unix": 1450137600,  "natural": "December 15, 2015" }</p>
+        
+        <p class='list-items'>However, since you did not enter a valid time on this occasion, the result of your input is: <br><br> { "unix": null,  "natural": null }</p>
+        
+    </p>
+</body>

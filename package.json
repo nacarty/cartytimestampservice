@@ -1,0 +1,13 @@
+{
+  "name": "Time-Stamp Micro-Service",
+  "version": "0.0.0",
+  "description": "A simple server application that takes a time variable in the url and responds with the time in both unix and natural language formats.",
+  "main": "TimeStampMicroService.js",
+  "repository": "",
+  "author": "Nigel Carty<nacarty@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "~0.9.14"
+  }
+}
