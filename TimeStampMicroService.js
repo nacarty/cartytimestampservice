@@ -10,7 +10,7 @@ var fileSystem = require('fs');
 
 var SERVER = HTTP.createServer(connectionListener);
 
-SERVER.listen(8080);
+SERVER.listen(process.env.PORT||8080);
  
  function connectionListener(request, response){
      
